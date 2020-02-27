@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>木联星 我的小屋</title>
+  <link rel="icon" href="{{url_for('static',filename='/img/me2.jpg')}}">
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss.html">
+  <link rel=search type="application/opensearchdescription+xml" href="opensearch.xml" title="木联星 我的小屋">
+  <meta name="keywords" content="学习 技术, 前端, 后端, 服务端, 安全, 病毒, 黑客, 攻击">
+  <meta name="description" content="分享个人日常学到的技术，与安全的互联网共同成长。"><link rel="canonical" href="" />
+  <link rel="stylesheet" href="{{url_for('static',filename='css/all.css')}}" type="text/css" data-ls="css_firekylin">
+  
+  <style>
+    
+
+    
+    /** 隐藏列表页评论数 **/
+/** 取消代码高亮语言显示 **/
+#main .meta .comment, article pre b.name {
+  display: none;
+}
+
+/** 设置正文图片大小统一宽度 **/
+#page-post img {
+  margin: auto;
+}
+#page-post p.figure {
+  text-align: center;
+}
+/** 取消正文 center 标签样式 **/
+#page-post center {
+  text-align: left;
+}
+
+/** 正文 pre 样式修改 **/
+#page-post pre.pure {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+  white-space: pre;
+}
+
+.hljs{display:block;overflow-x:auto;padding:0.5em;background:#272822;color:#ddd}.hljs-tag,.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-strong,.hljs-name{color:#f92672}.hljs-code{color:#66d9ef}.hljs-class .hljs-title{color:white}.hljs-attribute,.hljs-symbol,.hljs-regexp,.hljs-link{color:#bf79db}.hljs-string,.hljs-bullet,.hljs-subst,.hljs-title,.hljs-section,.hljs-emphasis,.hljs-type,.hljs-built_in,.hljs-builtin-name,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-addition,.hljs-variable,.hljs-template-tag,.hljs-template-variable{color:#a6e22e}.hljs-comment,.hljs-quote,.hljs-deletion,.hljs-meta{color:#75715e}.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-doctag,.hljs-title,.hljs-section,.hljs-type,.hljs-selector-id{font-weight:bold}
+article .entry-content pre .firekylin-code,
+article .firekylin-code > ul,
+article .firekylin-code li:nth-of-type(even),
+article .firekylin-code li:hover,
+article .firekylin-code li {
+  background-color: #272822 !important;
+  border-left: none;
+  line-height: 1.5;
+}
+  </style>
+  
+</head>
+<body>
+<nav id="sidebar" class="behavior_1">
+  <div class="wrap">
+      <div class="profile">
+          <a href="/index.html">
+              <img src="{{url_for('static',filename='/img/me2.jpg')}}" alt="木联星 我的个人博客">
+          </a>
+          <span>MY Nest</span>
+      </div>
+      <ul class="buttons">
+          
+          <li>
+              <a class="" href="index.html" title="主页 Home">
+                  <i class="iconfont icon-home"></i>
+                  <span>主页 Home</span>
+              </a>
+          </li>
+          
+          <li>
+              <a class="" href="archives.html" title="归档 Archive">
+                  <i class="iconfont icon-https"></i>
+                  <span>归档 Archive</span>
+              </a>
+          </li>
+          
+          <li>
+              <a class="" href="cates.html" title="分类 Category">
+                  <i class="iconfont icon-archive"></i>
+                  <span>分类 Category</span>
+              </a>
+          </li>
+          
+          <li>
+              <a class="" href="about.html" title="关于 About">
+                  <i class="iconfont icon-user"></i>
+                  <span>关于 About</span>
+              </a>
+          </li>
+          
+      </ul>
+      <ul class="buttons">
+        <li>
+          
+          <a class="inline" rel="nofollow" target="_blank" href="https://github.com/IT-qimu">
+            <i class="iconfont icon-github-v" title="GitHub"></i>
+          </a>
+          
+          
+            
+            <a class="inline"  rel="nofollow" target="_blank" >
+              <i class="iconfont icon-weixin" title="WeiXin"></i>
+            </a>
+            
+            
+          
+          <a class="inline" rel="nofollow" target="_blank" href="https://2590259878@qq.com">
+            <i class="iconfont icon-mail" title="Email"></i>
+          </a>
+          <a class="inline" href="/search.html">
+            <i class="iconfont icon-search" title="Search"></i>
+          </a>
+        </li>
+      </ul>
+  </div>
+</nav>
+<div id="header">
+  <div class="btn-bar"><i></i></div>
+  <h1><a href="index.html">木联星 我的个人博客</a></h1>
+  <a class="me" href="about/index.html"><img src="http://47.111.236.9/wp-content/uploads/2020/01/%E6%9C%A8%E8%81%94%E6%98%9F_WPS%E5%9B%BE%E7%89%87.png" alt="木联星 我的个人博客"></a>
+</div>
+
+
+
+<!-- 上面是模板 下面是内容 以此分割互不侵犯 -->
+
+
+
+<div id="sidebar-mask"></div>
+<div id="main">
+
+<article class="post detail">
+  <h1 class="title">Site Search</h1>
+
+  <div class="entry-content">
+    <div id="search">
+      <form action="search.html">
+        <div class="wrapper">
+          <input maxlength="80" placeholder="Please input keywords..." id="keyword" name="keyword" value="" type="search" required />
+        </div>
+        <input class="submit" type="submit" value="Search" />
+      </form>
+    </div>
+
+    
+    <div id="searchResult">
+      <div class="hot-words">
+        热搜： 
+
+<a>{{jso["newslist"][0]["hotword"]}}</a>
+        
+        <a>{{jso["newslist"][1]["hotword"]}}</a>
+        
+        <a>{{jso["newslist"][2]["hotword"]}}</a>
+        
+        <a>{{jso["newslist"][3]["hotword"]}}</a>
+        
+        <a>{{jso["newslist"][4]["hotword"]}}</a>
+      </div>
+    </div>
+    
+  </div>
+</article>
+
+
+<!-- 上面是内容 下面是页脚模板 以此分割互不侵犯 -->
+
+<footer id="footer" class="inner">
+  &copy; 2020&nbsp;-&nbsp; MY Nest
+  
+    &nbsp;-&nbsp;<a href="index.html">sutio.cn</a>
+  
+  <br />
+  Powered by&nbsp;<a target="_blank" href="https://thinkjs.org">ThinkJS</a>&nbsp;&amp;&nbsp;<a target="_blank" rel="nofollow" class="external" href="https://firekylin.org">FireKylin 1.2.8</a>
+</footer>
+</div>
+<script
+src="{{url_for('static',filename="js/firekylin.js")}}">
+</script>
+
+  <script>
+(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};
+b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);
+s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)
+})(window,document,"script","_qha",299978,false);
+</script>
+<script>
+(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};
+b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);
+s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)
+})(window,document,"script","_qha",300084,false);
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137484248-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137484248-1');
+</script>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["tsina","weixin","twi","evernotecn","sqq","youdao"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+//微信分享
+function wxload(src) {
+	return new Promise(function(resolve, reject) {
+		var s = document.createElement('script');
+		s.onload = resolve;
+		s.onerror = reject;
+		s.src = src;
+      	document.body.appendChild(s);
+	});
+}
+
+function wxjsonp(src) {
+  let cbName = 'wxjsonpcb';
+  if(window[cbName]) {
+    cbName += cbName;
+  }
+  
+  let url = 'http://misc.hao.360.cn/weixin/api?format=json&appKey=360Blogs:360blog:360blog&url='+encodeURIComponent(location.href.split('#')[0])+'&_callback='+cbName;
+  return new Promise(function(resolve, reject) {
+  	window[cbName] = resolve;
+    wxload(url).then(null, reject);
+  });
+}
+
+function wxshare(wxData) {
+    // 第一步：通过通用服务获取config数据
+    function getWxConfig() {
+      	wxjsonp().then(function(result){
+          bindWxEvent(result.data);
+        });
+    }
+
+    function bindWxEvent(config) {
+        wx.config({
+          debug: location.search.indexOf('wxdebug=1') > 0,
+          appId: config.appId,
+          timestamp: config.timestamp,
+          nonceStr: config.nonceStr,
+          signature: config.signature,
+          jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem'
+          ]
+        });
+ 
+
+        wx.ready(function () {
+            wx.onMenuShareTimeline({
+                title: wxData.desc, // 分享标题
+                link: wxData.link, // 分享链接
+                imgUrl: wxData.imgUrl, // 分享图标
+                success: function () {
+                    // 用户确认分享后执行的回调函数
+                },
+                cancel: function () {
+                    // 用户取消分享后执行的回调函数
+                }
+            });
+            wx.onMenuShareAppMessage({
+                title: wxData.title,
+                desc: wxData.desc,
+                link: wxData.link,
+                imgUrl: wxData.imgUrl,
+                trigger: function (res) {
+                },
+                success: function (res) {
+                },
+                cancel: function (res) {
+                },
+                fail: function (res) {
+                }
+            });
+        });
+    }
+ 
+ 	getWxConfig();
+}
+
+wxload('http://res.wx.qq.com/open/js/jweixin-1.0.0.js').then(function() {
+	const avatar = document.querySelector('.profile img');
+  	const content = document.querySelector('#page-post p');
+  	const descMeta = document.querySelector('meta[name=description]');
+  	return wxshare({
+      imgUrl: avatar.src,
+      link: location.href,
+      title: document.title,
+      desc: content ? content.innerText : descMeta.content
+	});	
+})</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<h1>docker配置kail容器# docker配置kail容器</h1>
+<ul>
+<li>配置docker的方法就不再在本文记录 </li>
+<li>下面直接进入docker下kail的安装配置 </li>
+<li>输入命令：
+<code>docker pull kalilinux/kali-linux-docker</code></li>
+<li>从docker存储库 获取kail镜像后</li>
+<li>启动镜像生产容器 
+<code>Docker run -d -it 23f3rrwsfhgfnd2fd -p 2202:22 /bin/bash</code></li>
+<li>然后得到正在运行的kail容器
+<code>Docker exec -it fdsf32f34f12e23r /bin/bash</code></li>
+<li>进入容器 
+<code>apt-get update &amp;&amp; apt-get install metasploit-framework</code></li>
+<li>安装msf 成功</li>
+<li>接下来退出容器 </li>
+<li>把配置好容器封装成镜像 </li>
+<li>然后上传到自己的docker hub 存储库里</li>
+<li>这样下次使用 就方便了 </li>
+<li>当然要登陆自己的docker hub 账号 
+<code>docker login Docker cmmint df3243r4fregre（ID号）kail(image-name)</code> </li>
+<li>接下来就是给镜像打标签了 </li>
+<li>标签决定着 镜像存储在那个docker库项目里 
+<code>Docker tag kail lisensen545123/mygame</code></li>
+<li>这次上传的项目名为lisensen545123/mygame</li>
+<li>接下来就是上传了 
+<code>docker push lisensen545123/mygame</code>2020/2/24</li>
+</ul>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<head>
+
+<nav>
+<form action="/get_index_page" method="get" id =2>
+<li><a> 当前摘要数量:{{some_page_number}}<a>
+{%set url_name = some_page_number + 1%}
+<li> 文件名称  : <input type="textarea" name="file_name" value='some_page{{url_name}}.html'/></li>
+<li> 摘要标题: <input type="textarea" name="file_title" /></li>
+<li> 摘要内容: </li>
+<li><textarea cols="20" rows="5" name="file_body"  ></textarea></li>
+<li> 全文链接: <input type="textarea" name="page_url" value="/page/{{url_name}}" /></li>
+<li> 发布者: <input type="textarea" name="user_name" /></li>
+<li> 发布时间: <input type="textarea" name="time" /></li>
+<li> <input type="submit" value="Submit" /></li>
+</form>
+</nav>
+
+
+
+
+
+
+<ls>
+<form action="/get_body_page" method="get" id = 4>
+<li><a> 当前文章数量:{{page_number}}<a>
+{% set page_name = page_number + 1 %}
+<li> 文件名称  : <input type="textarea" name="file_name" value='page{{page_name}}.html' /></li>
+<li> MD名称  : <input type="textarea" name="md_name" value='page{{page_name}}.md' /></li>
+<li> 文章标题: <input type="textarea" name="file_title" /></li>
+<li> 文章内容: </li>
+<li><textarea cols="20" rows="5" name="file_body"  ></textarea></li>
+<li> 发布者: <input type="textarea" name="user_name" /></li>
+<li> 发布时间: <input type="textarea" name="time" /></li>
+<li> <input type="submit" value="Submit" /></li>
+</form>
+<ls>
+
+
+
+
+
+
+
+<qr>
+<form action="/get_archives_page" method="get" id = 6>
+<li><a> 当前归档数量:{{archives_page_number}}<a>
+{% set archives_page_name = archives_page_number + 1 %}
+<li> 文章标题: <input type="textarea" name="file_title" /></li>
+<li> 归档名称  : <input type="textarea" name="file_name" value='page_{{archives_page_name}}.html' /></li>
+<li> 全文链接: <input type="textarea" name="page_url" value="/archives/{{archives_page_name}}" /></li>
+<li> 归档内容: </li>
+<li><textarea cols="20" rows="5" name="file_body"  ></textarea></li>
+<li> 归档月份: <input type="textarea" name="year_time" /></li>
+<li> 归档时间: <input type="textarea" name="time" /></li>
+<li> <input type="submit" value="Submit" /></li>
+</form>
+</qr>
+
+
+<rm_archives>
+<form action="/rm_archives_page" method="get" id = 6>
+<li> 删除归档文件: <input type="textarea" name="rm_file_name"  value='page_*.html'/></li>
+<li> <input type="submit" value="Submit" /></li>
+</form>
+</rm_archives>
+
+
+<rm_page>
+<form action="/rm_some_body_page" method="get" id = 6>
+<li> 删除摘要文件: <input type="textarea" name="rm_file_name"  value='some_page*.html'/></li>
+<li> <input type="submit" value="Submit" /></li>
+</form>
+</rm_page>
+
+<rm_page>
+<form action="/rm_body_page" method="get" id = 6>
+<li> 删除文章文件: <input type="textarea" name="rm_file_name"  value='page*.html'/></li>
+<li> <input type="submit" value="Submit" /></li>
+</form>
+</rm_page>
+
+
+</html>
